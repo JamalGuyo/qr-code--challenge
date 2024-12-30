@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -38,6 +38,8 @@
         --fs-100: 0.938rem;
         --fw-400: 400;
         --fw-700: 700;
+
+        --border-radius: 0.75rem;
       }
 
       h1,
@@ -55,34 +57,37 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 2rem;
 
         background-color: var(--clr-slate-300);
         font-family: var(--ff-outfit);
         font-size: var(--fs-100);
+        font-weight: var(--fw-400);
       }
 
       img {
         max-width: 100%;
         display: block;
-        border-radius: 0.5rem;
+        border-radius: var(--border-radius);
       }
 
       .card {
-        max-width: 30rem;
+        max-width: 18rem;
+        padding: 1rem 1rem 2rem 1rem;
+        border-radius: var(--border-radius);
+
         background: var(--clr-white);
-        padding: 2rem;
-        border-radius: 0.5rem;
+        text-align: center;
       }
 
       .card h1 {
+        font-size: 1.35rem;
         font-weight: var(--fw-700);
         color: var(--clr-slate-900);
       }
 
       .card p {
-        font-size: inherit;
         color: var(--clr-slate-500);
-        font-weight: var(--fw-400);
       }
 
       .attribution {
@@ -98,7 +103,10 @@
   <body>
     <div class="card flow-content">
       <img src="/images/image-qr-code.png" alt="Qr code image" />
-      <h1>Improve your front-end skills by building projects</h1>
+      <h1>
+        Improve your front-end<br />
+        skills by building projects
+      </h1>
       <p>
         Scan the QR code to visit Frontend Mentor and take your coding skills to
         the next level
@@ -113,4 +121,3 @@
     </div>
   </body>
 </html>
-
