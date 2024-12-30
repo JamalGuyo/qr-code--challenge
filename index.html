@@ -39,6 +39,7 @@
         --fw-400: 400;
         --fw-700: 700;
 
+        --spacer: 1rem;
         --border-radius: 0.75rem;
       }
 
@@ -48,7 +49,7 @@
       }
 
       .flow-content > * + * {
-        margin-top: 1rem;
+        margin-top: var(--spacer);
       }
 
       body {
@@ -72,8 +73,8 @@
       }
 
       .card {
-        max-width: 20rem;
-        padding: 1rem 1rem 2rem 1rem;
+        max-width: 19rem;
+        padding: 1rem 1rem 3rem 1rem;
         border-radius: var(--border-radius);
 
         background: var(--clr-white);
@@ -101,23 +102,27 @@
     </style>
   </head>
   <body>
-    <div class="card flow-content">
-      <img src="/images/image-qr-code.png" alt="Qr code image" />
-      <h1>
-        Improve your front-end<br />
-        skills by building projects
-      </h1>
-      <p>
-        Scan the QR code to visit Frontend Mentor and take your coding skills to
-        the next level
-      </p>
-    </div>
+    <main>
+      <div class="card flow-content">
+        <img src="/images/image-qr-code.png" alt="Qr code image" />
+        <h1>
+          Improve your front-end<br />
+          skills by building projects
+        </h1>
+        <p>
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </main>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Jamal Abgudo</a>.
-    </div>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Jamal Abgudo</a>.
+      </div>
+    </footer>
   </body>
 </html>
